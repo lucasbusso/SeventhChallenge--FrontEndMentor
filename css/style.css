@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    ### Primary
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    ### Neutral
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--Very-Light-Gray) ;
+}
+header{
+    text-align: center;
+    margin: auto;
+    font-size: .7em;
+    margin-top: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+header >p {
+    margin-top: 1rem;
+    color: var(--Grayish-Blue)
+}
+span{
+    font-weight: 300;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    margin-left: 35rem;
+    margin-top: 17rem;
+}
+.card_container{
+
+}
+.content{
+
+}
+.card__title{
+    font-size: .9em;
+    color: var(--Very-Dark-Blue);
+}
+.card__para{
+    font-size: .7em;
+    color: var(--Grayish-Blue);
+}
+.card__icon{
+    height: 2.5rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+.card1{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+    border-top:  3px var(--Cyan) solid;
+    box-shadow: 5px 15px 20px 5px rgba(0, 30, 70, .1);
+    margin-left: -34rem;
+    margin-top: -20rem;
+}
+.card2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    border-top:  3px hsl(0, 78%, 62%) solid;
+    box-shadow: 5px 15px 20px 5px rgba(0, 30, 70, .1);
+    margin-top: -20rem;
+   /* display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    box-shadow: 5px 15px 20px 5px rgba(0, 30, 70, .1);
+    margin-top: -20rem;*/
+}
+.card3{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border-top:  3px hsl(34, 97%, 64%) solid;
+    box-shadow: 5px 15px 20px 5px rgba(0, 30, 70, .1);
+    margin-top: 1rem;
+    /*
+    background-color: white;
+    box-shadow: 5px 15px 20px 5px rgba(0, 30, 70, .1);*/
+}
+.card4{
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 15px 20px 5px rgba(0, 30, 70, .1);
+    margin-top: -10rem;
+    margin-left: 35rem;
+    border-top:  3px var(--Blue) solid;
+}
+footer{
+    position:absolute;
+    margin-left: 32rem ;
+    bottom: 0;
+}
+
+@media (min-width:375px) and (max-width: 760px){
+    .card_container{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.card1:hover{
+    transition: 1s ease;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+.card1:hover h2{
+    transition: 1s ease-in;
+    color: white;
+}
+.card1:hover p{
+    transition: 1s ease;
+    color: white;
+}
+.card2:hover{
+    transition: 1s ease;
+    background-color: salmon;
+    cursor: pointer;
+}
+.card2:hover h2{
+    transition: 1s ease-in;
+    color: white;
+}
+.card2:hover p{
+    transition: 1s ease;
+    color: white;
+}
+.card3:hover{
+    transition: 1s ease;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+.card3:hover h2{
+    transition: 1s ease-in;
+    color: white;
+}
+.card3:hover p{
+    transition: 1s ease;
+    color: white;
+}
+.card4:hover{
+    transition: 1s ease;
+    background-color: slategray;
+    cursor: pointer;
+}
+.card4:hover h2{
+    transition: 1s ease-in;
+    color: white;
+}
+.card4:hover p{
+    transition: 1s ease;
+    color: white;
+}
